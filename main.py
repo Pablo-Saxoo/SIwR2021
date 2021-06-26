@@ -108,6 +108,8 @@ if __name__ == '__main__':
     probs = calculate_probs(data)
 
     # test_dataset(data)
-
-    _, date, home, away = sys.argv
+    date = input()
+    home = input()
+    away = input()
+#     _, date, home, away = sys.argv
     print(get_result(home, away))
