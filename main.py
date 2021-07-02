@@ -7,11 +7,25 @@ import pandas as pd
 from sklearn.metrics import (ConfusionMatrixDisplay, accuracy_score,
                              confusion_matrix)
 
+# TODO Jakość kodu (1.5/2)
+
+# TODO Skuteczność 0.527 (2.0/3)
+# TODO [0.56, 1.00] - 3.0
+# TODO [0.53, 0.56) - 2.5
+# TODO [0.50, 0.53) - 2.0
+# TODO [0.47, 0.50) - 1.5
+# TODO [0.44, 0.47) - 1.0
+# TODO [0.41, 0.44) - 0.5
+# TODO [0.00, 0.41) - 0.0
+
+# TODO Model i dobór parametrów (4/5)
+# TODO Brakuje opisu metody.
 
 def calculate_probs(data):
     """
     Calculates probabilities of winning and draws for each team
     """
+    # TODO Przydałyby się jakieś komentarze.
     keys = list(np.union1d(
         data['HomeTeam'].unique(), data['AwayTeam'].unique()))
     team_side = ['H', 'A']
